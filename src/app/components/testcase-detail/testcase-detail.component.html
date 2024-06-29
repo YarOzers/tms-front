@@ -1,0 +1,113 @@
+<div class="container text-center">
+  <div class="row">
+    <div class="col-10">
+      <div class="text-start">
+        <button type="button" class="btn btn-primary m-1">История</button>
+        <button type="button" class="btn btn-primary m-1">Удалить</button>
+      </div>
+      <h3 class="text-start">Предусловия</h3>
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item col-6 text-start">
+          <div class="main-container">
+            <div class="editor-container editor-container_balloon-editor editor-container_include-block-toolbar" #editorContainerElement>
+              <div class="editor-container__editor">
+                <div #editorElement>
+                  <ckeditor [editor]="Editor" [config]="config" *ngIf="isLayoutReady" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item col-6 text-start">
+          <div class="main-container">
+            <div class="editor-container editor-container_balloon-editor editor-container_include-block-toolbar" #editorContainerElement>
+              <div class="editor-container__editor">
+                <div #editorElement>
+                  <div *ngIf="isLayoutReady">
+                  <ckeditor [editor]="Editor" [config]="config" *ngIf="isLayoutReady" />
+                </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item col-6 text-start">Шаг-2</li>
+        <li class="list-group-item col-6 text-start">Ожидаемый результат</li>
+      </ul>
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item col-6">Шаг-3</li>
+        <li class="list-group-item col-6">Ожидаемый результат</li>
+      </ul>
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item col-6">Шаг-4</li>
+        <li class="list-group-item col-6">Ожидаемый результат</li>
+      </ul>
+      <div class="text-end">
+        <button type="button" class="btn btn btn-outline-secondary btn-sm mt-1">Добавить шаг</button>
+      </div>
+      <h3 class="text-start">Шаги</h3>
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item col-6">Шаг-1</li>
+        <li class="list-group-item col-6">Ожидаемый результат</li>
+      </ul>
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item col-6">Шаг-2</li>
+        <li class="list-group-item col-6">Ожидаемый результат</li>
+      </ul>
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item col-6">Шаг-3</li>
+        <li class="list-group-item col-6">Ожидаемый результат</li>
+      </ul>
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item col-6">Шаг-4</li>
+        <li class="list-group-item col-6">Ожидаемый результат</li>
+      </ul>
+      <div class="text-end">
+        <button type="button" class="btn btn btn-outline-secondary btn-sm mt-1">Добавить шаг</button>
+      </div>
+
+      <h3 class="text-start">Постусловия</h3>
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item col-6">Шаг-1</li>
+        <li class="list-group-item col-6">Ожидаемый результат</li>
+      </ul>
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item col-6">Шаг-2</li>
+        <li class="list-group-item col-6">Ожидаемый результат</li>
+      </ul>
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item col-6">Шаг-3</li>
+        <li class="list-group-item col-6">Ожидаемый результат</li>
+      </ul>
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item col-6">Шаг-4</li>
+        <li class="list-group-item col-6">Ожидаемый результат</li>
+      </ul>
+      <div class="text-end">
+        <button type="button" class="btn btn btn-outline-secondary btn-sm mt-1">Добавить шаг</button>
+      </div>
+    </div>
+
+    <!--    Правая часть -->
+    <div class="col-2">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Приоритет
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <button class="dropdown-item" type="button">Действие</button>
+          </li>
+          <li>
+            <button class="dropdown-item" type="button">Другое действие</button>
+          </li>
+          <li>
+            <button class="dropdown-item" type="button">Что-то еще здесь</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<ul class="list-group">
+  <li class="list-group-item active" aria-current="true"><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Запустите демо модального окна
+  </button></li>
+  <li class="list-group-item">Второй элемент</li>
+  <li class="list-group-item">Третий элемент</li>
+  <li class="list-group-item">Четвертый элемент</li>
+  <li class="list-group-item">И пятый</li>
+</ul>
+
+
+
+<!-- Модальное окно -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Название тест-кейса</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+      <div class="modal-body">
+        <app-testcase-detail></app-testcase-detail>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Сохранить</button>
+      </div>
+    </div>
+  </div>
+</div>
